@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, Heart, Search, ShoppingBag, Sparkles, Star } from 'lucide-react';
+import { Check, Heart, MessageCircle, Search, ShoppingBag, Sparkles, Star } from 'lucide-react';
 import { categories } from '../data';
 import ProductImage from './ProductImage';
 import SocialLinks from './SocialLinks';
@@ -127,7 +127,18 @@ export default function Storefront({ products, settings }) {
             สามารถทักไปคุยโทนสีและรายละเอียดก่อนสั่งได้เลย
           </p>
         </div>
-        <SocialLinks settings={settings} variant="soft" />
+        <div className="custom-cta">
+          <a
+            className="primary-button"
+            href={settings.lineUrl && settings.lineUrl !== '#' ? settings.lineUrl : undefined}
+            target="_blank"
+            rel="noreferrer"
+            style={{ minHeight: '46px', padding: '0 24px', opacity: settings.lineUrl && settings.lineUrl !== '#' ? 1 : 0.6 }}
+          >
+            <MessageCircle size={18} />
+            <span>ทักแชทสั่งทำ (LINE OA)</span>
+          </a>
+        </div>
       </section>
 
       {/* FEATURES */}

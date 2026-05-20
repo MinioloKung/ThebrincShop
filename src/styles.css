@@ -4,8 +4,8 @@
 @theme {
   --color-pink-kawaii: #f8a4c0;
   --color-pink-deep: #e8799e;
-  --color-pink-glow: rgba(248, 164, 192, 0.15);
-  --color-bg: #fffafc;
+  --color-pink-glow: rgba(248, 164, 192, 0.1);
+  --color-bg: #faf6f0;
   --color-text-main: #5a3d4a;
   --color-text-light: #9a7b8a;
   --font-family-sans: 'Quicksand', sans-serif;
@@ -15,22 +15,22 @@
 :root {
   --pink: #f8a4c0;
   --pink-light: #fdd5e4;
-  --pink-pale: #fff0f5;
+  --pink-pale: #fff5f6;
   --pink-deep: #e8799e;
-  --pink-glow: rgba(248, 164, 192, 0.15);
+  --pink-glow: rgba(248, 164, 192, 0.1);
   --white: #ffffff;
-  --bg: #fffafc;
+  --bg: #faf6f0;
   --card: #ffffff;
   --text: #5a3d4a;
-  --text-light: #9a7b8a;
-  --line: #fce4ec;
+  --text-light: #8e7380;
+  --line: #efe7e4;
   --mint: #e8faf2;
   --lemon: #fff8dc;
   --lavender: #f3e8ff;
-  --shadow: 0 8px 32px rgba(200, 120, 150, 0.1);
-  --shadow-hover: 0 12px 40px rgba(200, 120, 150, 0.18);
-  --radius: 20px;
-  --radius-sm: 14px;
+  --shadow: 0 8px 30px rgba(165, 145, 135, 0.06);
+  --shadow-hover: 0 16px 40px rgba(165, 145, 135, 0.12);
+  --radius: 24px;
+  --radius-sm: 16px;
   --radius-full: 999px;
   color: var(--text);
   background: var(--bg);
@@ -485,7 +485,9 @@ nav a:hover {
 /* ═══ CUSTOM BAND ═══ */
 .custom-band {
   @apply flex items-center justify-between gap-6 mt-2 py-12 relative overflow-hidden;
-  background: linear-gradient(120deg, var(--pink-pale), var(--white) 50%, var(--lavender));
+  background: linear-gradient(120deg, var(--pink-pale), var(--white) 60%, var(--bg));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 .custom-band::before {
   content: '♡';
