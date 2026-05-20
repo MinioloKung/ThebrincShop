@@ -23,7 +23,7 @@ export default function Storefront({ products, settings }) {
       {/* HEADER */}
       <header className="site-header">
         <a className="brand" href="/">
-          <img className="brand-logo" src="/logo.png" alt="Thebrinc.c" />
+          <img className="brand-logo" src="/logothebrinc1.png" alt="Thebrinc.c" />
           <span>Thebrinc.c</span>
         </a>
         <nav>
@@ -149,7 +149,7 @@ export default function Storefront({ products, settings }) {
       {/* FOOTER */}
       <footer className="footer" id="contact">
         <div>
-          <img className="brand-logo" src="/logo.png" alt="Thebrinc.c" style={{width:32,height:32}} />
+          <img className="brand-logo" src="/logothebrinc1.png" alt="Thebrinc.c" style={{width:58,height:32}} />
           <strong>Thebrinc.c</strong>
           <p>Handmade bead accessories for your soft little moments ♡</p>
         </div>

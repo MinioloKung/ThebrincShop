@@ -85,7 +85,7 @@ export default function Dashboard({ products, settings, saveProducts, saveSettin
     <main className="admin-page">
       <aside className="admin-sidebar">
         <a className="brand" href="/">
-          <img className="brand-logo" src="/logo.png" alt="Thebrinc.c" />
+          <img className="brand-logo" src="/logothebrinc1.png" alt="Thebrinc.c" />
           <span>Thebrinc.c</span>
         </a>
         <div className="admin-nav">

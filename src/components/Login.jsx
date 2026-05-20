@@ -23,7 +23,7 @@ export default function Login({ onLogin }) {
     <main className="admin-page login-page">
       <form className="login-card" onSubmit={submitLogin}>
         <a className="brand" href="/">
-          <img className="brand-logo" src="/logo.png" alt="Thebrinc.c" />
+          <img className="brand-logo" src="/logothebrinc1.png" alt="Thebrinc.c" />
           <span>Thebrinc.c</span>
         </a>
         <div>

@@ -122,7 +122,7 @@ p {
   @apply inline-flex items-center gap-2.5 font-bold text-base;
 }
 .brand-logo {
-  @apply w-[38px] h-[38px] rounded-full object-cover;
+  @apply w-[60px] h-[38px] rounded-full object-cover;
 }
 nav {
   @apply flex items-center gap-5;
@@ -223,16 +223,28 @@ nav a:hover {
 .social-links {
   @apply flex flex-wrap gap-2 mt-5;
 }
+.social-links.footer {
+  margin-top: 0;
+}
 .social-links.primary a {
   background: linear-gradient(135deg, var(--pink), var(--pink-deep));
   color: #fff;
   box-shadow: 0 6px 20px rgba(232, 121, 158, 0.25);
 }
-.social-links.soft a,
-.social-links.footer a {
+.social-links.soft a {
   @apply bg-white;
   border: 1px solid var(--line);
   color: var(--text);
+}
+.social-links.footer a {
+  @apply bg-transparent shadow-none;
+  border: none;
+  color: var(--text-light);
+}
+.social-links.footer a:hover {
+  box-shadow: none;
+  color: var(--pink-deep);
+  transform: translateY(-2px);
 }
 .social-links a.disabled {
   background: #f0e4e8;
