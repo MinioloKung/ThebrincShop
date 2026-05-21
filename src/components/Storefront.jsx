@@ -164,7 +164,7 @@ export default function Storefront({ products, settings }) {
           <strong>Thebrinc.c</strong>
           <p>Handmade bead accessories for your soft little moments ♡</p>
         </div>
-        <SocialLinks settings={settings} variant="footer" />
+        <SocialLinks settings={settings} variant="footer-links" />
       </footer>
     </main>
   );

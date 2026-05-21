@@ -223,8 +223,8 @@ nav a:hover {
 .social-links {
   @apply flex flex-wrap gap-2 mt-5;
 }
-.social-links.footer {
-  margin-top: 0;
+.social-links.footer-links {
+  margin-top: 20px;
 }
 .social-links.primary a {
   background: linear-gradient(135deg, var(--pink), var(--pink-deep));
@@ -236,12 +236,12 @@ nav a:hover {
   border: 1px solid var(--line);
   color: var(--text);
 }
-.social-links.footer a {
+.social-links.footer-links a {
   @apply bg-transparent shadow-none;
   border: none;
   color: var(--text-light);
 }
-.social-links.footer a:hover {
+.social-links.footer-links a:hover {
   box-shadow: none;
   color: var(--pink-deep);
   transform: translateY(-2px);
