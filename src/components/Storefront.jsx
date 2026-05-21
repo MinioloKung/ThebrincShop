@@ -36,6 +36,11 @@ export default function Storefront({ products, settings }) {
 
       {/* HERO */}
       <section className="hero">
+        <div className="ambient-blobs">
+          <div className="blob-circle blob-1" />
+          <div className="blob-circle blob-2" />
+          <div className="blob-circle blob-3" />
+        </div>
         <div className="hero-copy">
           <p className="eyebrow">✿ Handmade bead accessories</p>
           <h1>Thebrinc.c</h1>
@@ -150,7 +155,9 @@ export default function Storefront({ products, settings }) {
           ['Custom Friendly', settings.announcement],
         ].map(([title, desc]) => (
           <article key={title}>
-            <Check size={18} />
+            <div className="icon-wrapper">
+              <Check size={18} />
+            </div>
             <h3>{title}</h3>
             <p>{desc}</p>
           </article>
